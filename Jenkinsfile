@@ -5,6 +5,9 @@ pipeline {
     }
   }
   stages {
+    stage('git pull') {
+      checkout scm
+    }
     stage('build') {
       steps {
         echo 'Run npm install'
