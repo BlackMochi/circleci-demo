@@ -4,7 +4,7 @@ var calc = require('../calc');
 describe('Tests', function() {
     describe('function plus()', function() {
         it('Should properly plus 1 + 1 = 2', function() {
-            assert.equal(calc.plus(1, 1), 4);
+            assert.equal(calc.plus(1, 1), 2);
         });
     });
 
