@@ -8,6 +8,7 @@ pipeline {
     stage('hello') {
       steps {
         echo 'Hello jenkins'
+        sh 'hostname'
       }
     }
   }
