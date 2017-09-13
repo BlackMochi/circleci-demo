@@ -13,7 +13,7 @@ pipeline {
     stage('build') {
       steps {
         echo 'Run npm install'
-        sh 'sudo chown -R $USER:$(id -gn $USER) /.npm'
+        sh 'whoami'
         sh 'npm install'
       }
     }
