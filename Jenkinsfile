@@ -1,9 +1,5 @@
 pipeline {
-  agent {
-    docker {
-      image 'node:8.0.0'
-    }
-  }
+  agent any
   stages {
     stage('git pull') {
       steps {
@@ -13,7 +9,6 @@ pipeline {
     stage('build') {
       steps {
         echo 'Run npm install'
-        sh 'whoami'
         sh 'npm install'
       }
     }
