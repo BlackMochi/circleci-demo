@@ -3,10 +3,9 @@ pipeline {
     docker {
       image 'node:8.0.0'
     }
-    
   }
   stages {
-    stage('error') {
+    stage('hello') {
       steps {
         echo 'Hello jenkins'
       }
