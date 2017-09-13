@@ -1,14 +1,21 @@
 pipeline {
-  agent {
-    docker {
-      image 'node:8.0.0'
-    }
-    
-  }
+  agent any
   stages {
-    stage('error') {
+    stage('git pull') {
       steps {
-        echo 'Hello jenkins'
+        checkout scm
+      }
+    }
+    stage('build') {
+      steps {
+        echo 'Run npm install'
+        sh 'npm install'
+      }
+    }
+    stage('test') {
+      steps {
+        echo 'Run test'
+        sh 'npm test'
       }
     }
   }
