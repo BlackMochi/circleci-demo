@@ -5,10 +5,16 @@ pipeline {
     }
   }
   stages {
-    stage('hello') {
+    stage('build') {
       steps {
-        echo 'Hello jenkins'
-        sh 'hostname'
+        echo 'Run npm install'
+        sh 'npm install'
+      }
+    }
+    stage('test') {
+      steps {
+        echo 'Run test'
+        sh 'npm test'
       }
     }
   }
