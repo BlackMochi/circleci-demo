@@ -6,6 +6,7 @@ pipeline {
   }
   stages {
     stage('git pull') {
+      sh 'mkdir /.npm'
       checkout scm
     }
     stage('build') {
