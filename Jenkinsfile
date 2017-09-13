@@ -6,12 +6,12 @@ pipeline {
   }
   stages {
     stage('git pull') {
-      sh 'mkdir /.npm'
       checkout scm
     }
     stage('build') {
       steps {
         echo 'Run npm install'
+        sh 'sudo chown -R $USER:$(id -gn $USER) /.npm'
         sh 'npm install'
       }
     }
