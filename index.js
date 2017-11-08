@@ -7,7 +7,7 @@ const server = http.createServer((req, res) => {
   res.write("<!DOCTYPE \"html\">");
   res.write("<html>");
   res.write("<head>");
-  res.write("<title>Test Page</title>");
+  res.write("<title>Test Jenkins Page</title>");
   res.write("</head>");
   res.write("<body>");
   res.write("<h1>circle-demo</h1>");
