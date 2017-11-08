@@ -18,12 +18,6 @@ const server = http.createServer((req, res) => {
   res.write("calc.multiply(2,2) <br>2 * 2 = " + calc.multiply(2,2));
   res.write("<br><br>");
   res.write("calc.divide(2,2) <br>2 / 2 = " + calc.divide(2,2));
-  res.write("<br><br>");
-  res.write("calc.divide(2,2) <br>2 / 2 = " + calc.divide(2,2));
-  res.write("<br><br>");
-  res.write("calc.divide(2,2) <br>2 / 2 = " + calc.divide(2,2));
-  res.write("<br><br>");
-  res.write("calc.divide(2,2) <br>2 / 2 = " + calc.divide(2,2));
   res.write("</body>");
   res.write("</html>");
   res.end();
