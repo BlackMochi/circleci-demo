@@ -22,7 +22,7 @@ describe('Tests', function() {
 
     describe('function divide()', function() {
         it('Should properly divide 1 / 1 = 1', function() {
-            assert.equal(calc.divide(1, 1), 1);
+            assert.equal(calc.divide(1, 1), 2);
         });
     });
 });
